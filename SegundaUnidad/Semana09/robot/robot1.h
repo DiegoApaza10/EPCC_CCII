@@ -6,7 +6,6 @@
 #include <vector>
 #include <sstream>
 using namespace std;
-
 class robot{
 	private:	
 		vector<pair<string,int>> nombre;
@@ -39,13 +38,3 @@ void robot::encendido(){
 	nombre.push_back(nom);
 	cout<<"Nomre del robot: "<<nombre.at(0).first<<nombre.at(0).second<<endl;
 }
-
-int main(){
-	for(int i=0;i<100;i++){
-		robot a;
-   		a.encendido();
-   		a.reseteo();
-	}
-    return 0;
-}
-	

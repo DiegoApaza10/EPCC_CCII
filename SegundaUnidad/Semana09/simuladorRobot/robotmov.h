@@ -2,7 +2,6 @@
 #include <cstring>
 #include <vector>
 using namespace std;
-
 template<class p>
 class simulador_robot{
 	private:
@@ -105,14 +104,4 @@ void simulador_robot<p>::moverse(){
             cout<<" comando no valido "<<endl;
         }
     }
-}
-
-
-
-
-int main(){
-    vector<char>inst={'D','A','A','I','A','I'};
-    simulador_robot<char> robot(inst);
-    robot.moverse();
-    return 0;
 }
